@@ -115,7 +115,7 @@ CONFIG_system-zynq=y
 # CONFIG_e2fsprogs-dev is not set
 # CONFIG_e2fsprogs-tune2fs is not set
 # CONFIG_libe2p is not set
-CONFIG_e2fsprogs-mke2fs=y
+# CONFIG_e2fsprogs-mke2fs is not set
 # CONFIG_e2fsprogs-dbg is not set
 
 #
@@ -146,7 +146,7 @@ CONFIG_e2fsprogs-mke2fs=y
 #
 # fpga-manager-script 
 #
-CONFIG_fpga-manager-script=y
+# CONFIG_fpga-manager-script is not set
 
 #
 # haveged 
@@ -217,7 +217,7 @@ CONFIG_fpga-manager-script=y
 #
 # mtd-utils 
 #
-CONFIG_mtd-utils=y
+# CONFIG_mtd-utils is not set
 # CONFIG_mtd-utils-ubifs is not set
 # CONFIG_mtd-utils-dev is not set
 # CONFIG_mtd-utils-jffs2 is not set
@@ -461,7 +461,7 @@ CONFIG_mtd-utils=y
 #
 # can-utils 
 #
-CONFIG_can-utils=y
+# CONFIG_can-utils is not set
 # CONFIG_can-utils-dbg is not set
 # CONFIG_can-utils-dev is not set
 
@@ -504,7 +504,7 @@ CONFIG_can-utils=y
 #
 # nfs-utils 
 #
-CONFIG_nfs-utils=y
+# CONFIG_nfs-utils is not set
 # CONFIG_nfs-utils-dev is not set
 # CONFIG_nfs-utils-client is not set
 # CONFIG_nfs-utils-stats is not set
@@ -549,7 +549,7 @@ CONFIG_nfs-utils=y
 #
 # rsync 
 #
-# CONFIG_rsync is not set
+CONFIG_rsync=y
 # CONFIG_rsync-dev is not set
 # CONFIG_rsync-dbg is not set
 
@@ -732,7 +732,7 @@ CONFIG_nfs-utils=y
 #
 # pciutils 
 #
-CONFIG_pciutils=y
+# CONFIG_pciutils is not set
 # CONFIG_pciutils-ids is not set
 # CONFIG_pciutils-dev is not set
 # CONFIG_libpci is not set
@@ -2192,7 +2192,7 @@ CONFIG_linux-xlnx-udev-rules=y
 #
 # gcc-runtime 
 #
-# CONFIG_libstdcPLUSPLUS is not set
+CONFIG_libstdcPLUSPLUS=y
 # CONFIG_libstdcPLUSPLUS-dev is not set
 
 #
@@ -2954,7 +2954,7 @@ CONFIG_packagegroup-core-boot=y
 #
 # tcf-agent 
 #
-CONFIG_tcf-agent=y
+# CONFIG_tcf-agent is not set
 # CONFIG_tcf-agent-dbg is not set
 # CONFIG_tcf-agent-dev is not set
 
@@ -3224,7 +3224,7 @@ CONFIG_tcf-agent=y
 #
 # bridge-utils 
 #
-CONFIG_bridge-utils=y
+# CONFIG_bridge-utils is not set
 # CONFIG_bridge-utils-dbg is not set
 # CONFIG_bridge-utils-dev is not set
 
@@ -3343,7 +3343,7 @@ CONFIG_bridge-utils=y
 #
 # u-boot-tools
 #
-CONFIG_u-boot-tools=y
+# CONFIG_u-boot-tools is not set
 # CONFIG_u-boot-tools-dbg is not set
 # CONFIG_u-boot-tools-dev is not set
 
@@ -3827,7 +3827,7 @@ CONFIG_u-boot-tools=y
 #
 # CONFIG_imagefeature-ssh-server-dropbear is not set
 CONFIG_imagefeature-ssh-server-openssh=y
-CONFIG_imagefeature-hwcodecs=y
+# CONFIG_imagefeature-hwcodecs is not set
 # CONFIG_imagefeature-package-management is not set
 # CONFIG_imagefeature-debug-tweaks is not set
 # CONFIG_imagefeature-empty-root-password is not set

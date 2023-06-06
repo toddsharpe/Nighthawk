@@ -1,0 +1,4 @@
+Name=MyApp
+
+[CppSources]
+main.cc

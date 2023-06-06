@@ -1,0 +1,5 @@
+Name=Monitor
+
+[CppSources]
+main.cc
+//Hosted/App.cc

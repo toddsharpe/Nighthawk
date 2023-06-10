@@ -1,0 +1,2 @@
+https://interrupt.memfault.com/blog/bazel-build-system-for-embedded-projects
+

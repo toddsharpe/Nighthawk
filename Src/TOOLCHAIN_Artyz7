@@ -13,3 +13,4 @@ Prefix=arm-xilinx-linux-gnueabi-
 -Wformat-security
 -Werror=format-security
 --sysroot=/opt/artyz7_sdk/sysroots/cortexa9t2hf-neon-xilinx-linux-gnueabi
+-Wno-psabi

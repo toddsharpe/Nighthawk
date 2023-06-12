@@ -1,0 +1,8 @@
+BinName=Init
+
+[CppSources]
+main.cc
+SysInit.cc
+>Linux/Network.cc
+>Linux/App.cc
+>Linux/Procfs.cc

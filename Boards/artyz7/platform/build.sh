@@ -1,7 +1,7 @@
 #! /bin/bash
 
 # Clean
-#petalinux-build -x mrproper -f
+petalinux-build -x mrproper -f
 
 # Pull XSA again?
 

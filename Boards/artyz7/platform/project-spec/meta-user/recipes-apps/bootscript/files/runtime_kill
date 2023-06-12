@@ -1,0 +1,8 @@
+#!/bin/sh
+
+echo "Killing Runtime"
+
+pkill Init
+
+rm -rf /run/tmp
+rm -rf /run/runtime

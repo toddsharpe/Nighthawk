@@ -1,0 +1,9 @@
+# FPGA
+arty_z7.cache
+arty_z7.runs
+arty_z7.sim
+arty_z7.ip_user_files
+
+*.jou
+*.log
+*.str

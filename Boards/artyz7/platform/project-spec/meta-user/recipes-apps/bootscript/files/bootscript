@@ -1,0 +1,15 @@
+#!/bin/sh
+
+echo "Hello PetaLinux World"
+
+mkdir /run/tmp
+mkdir /run/runtime
+mkfifo /run/runtime/log
+
+ip route add 239.1.1.1 dev eth0
+
+rsync -r rsync://172.16.1.1/files/Demo.zip /run/tmp
+unzip -o /run/tmp/Demo.zip -d /run/runtime/
+
+cd /run/runtime
+./bin/Init &

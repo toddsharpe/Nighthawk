@@ -1,23 +1,20 @@
+#pragma once
+
 namespace Nighthawk
 {
-    struct Callback
-    {
-        Callback() : Context(), Handler()
-        {
+	struct Callback
+	{
+		bool IsCallable()
+		{
+			return Handler != nullptr;
+		}
 
-        }
+		void Invoke()
+		{
+			Handler(Context);
+		}
 
-        bool IsCallable()
-        {
-            return Handler != nullptr;
-        }
-
-        void Invoke()
-        {
-            Handler(Context);
-        }
-
-        void* Context;
-        void (*Handler)(void* sender);
-    };
+		void *Context;
+		void (*Handler)(void *sender);
+	};
 }

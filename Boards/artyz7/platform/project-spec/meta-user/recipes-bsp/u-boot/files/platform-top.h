@@ -14,3 +14,6 @@
 #if defined(CONFIG_ARCH_VERSAL_NET)
 #include <configs/xilinx_versal_net.h>
 #endif
+
+#define CONFIG_SERVERIP 172.16.1.1
+//#define CONFIG_IPADDR 172.26.2.1

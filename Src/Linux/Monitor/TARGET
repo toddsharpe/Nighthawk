@@ -1,0 +1,8 @@
+BinName=Monitor
+
+[CppSources]
+main.cc
+Monitor.cc
+>Linux/App.cc
+>Linux/Network.cc
+>Linux/Procfs.cc

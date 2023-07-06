@@ -3829,22 +3829,23 @@ CONFIG_packagegroup-core-boot=y
 CONFIG_imagefeature-ssh-server-openssh=y
 # CONFIG_imagefeature-hwcodecs is not set
 # CONFIG_imagefeature-package-management is not set
-# CONFIG_imagefeature-debug-tweaks is not set
-# CONFIG_imagefeature-empty-root-password is not set
-# CONFIG_imagefeature-serial-autologin-root is not set
+CONFIG_imagefeature-debug-tweaks=y
+CONFIG_imagefeature-empty-root-password=y
+CONFIG_imagefeature-serial-autologin-root=y
 # CONFIG_Init-manager-systemd is not set
 CONFIG_Init-manager-sysvinit=y
 
 #
 # user packages 
 #
+CONFIG_bootscript=y
 # CONFIG_gpio-demo is not set
 # CONFIG_peekpoke is not set
 
 #
 # PetaLinux RootFS Settings
 #
-CONFIG_ADD_EXTRA_USERS="root:root;petalinux::passwd-expire;"
-CONFIG_CREATE_NEW_GROUPS="aie;"
-CONFIG_ADD_USERS_TO_GROUPS="petalinux:audio,video,aie,input;"
-CONFIG_ADD_USERS_TO_SUDOERS="petalinux"
+CONFIG_ADD_EXTRA_USERS="root:nighthawk"
+CONFIG_CREATE_NEW_GROUPS=""
+CONFIG_ADD_USERS_TO_GROUPS=""
+CONFIG_ADD_USERS_TO_SUDOERS=""

@@ -1,0 +1,15 @@
+BinName=PmodOled
+
+[IncludeDirs]
+>Boards/artyz7/
+>External/embeddedsw/lib/bsp/standalone/src/common/
+>External/embeddedsw/lib/bsp/standalone/src/arm/cortexa9/
+>External/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0/drivers/PmodOLEDrgb_v1_0/src
+>External/embeddedsw/lib/bsp/standalone/src/arm/common/gcc/
+
+[CSources]
+main.c
+>External/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0/drivers/PmodOLEDrgb_v1_0/src/PmodOLEDrgb.c
+>External/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0/drivers/PmodOLEDrgb_v1_0/src/xspi.c
+>External/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0/drivers/PmodOLEDrgb_v1_0/src/xspi_options.c
+>External/embeddedsw/lib/bsp/standalone/src/common/xil_assert.c

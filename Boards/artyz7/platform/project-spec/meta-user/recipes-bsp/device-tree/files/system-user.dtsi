@@ -1,3 +1,17 @@
 /include/ "system-conf.dtsi"
 / {
+
+};
+
+&axi_gpio_1 {
+	compatible = "generic-uio";
+};
+
+&PmodOLEDrgb_0 {
+	compatible = "generic-uio";
+	reg = <0x43c00000 0x10000 0x43c10000 0x10000>;
+};
+
+&axi_bram_ctrl_0 {
+	compatible = "generic-uio";
 };

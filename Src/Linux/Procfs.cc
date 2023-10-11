@@ -23,6 +23,8 @@ namespace Nighthawk
 				return false;
 			}
 
+			//Allocate stats.comm
+
 			// Do the read, feel bad about this format string
 			int ret = fscanf(procfp,
 				"%d %*s %c %d %d %d %d %d %u %lu %lu %lu %lu %lu %lu "

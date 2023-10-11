@@ -1,6 +1,8 @@
 [Targets]
 Linux/Init
 Linux/Monitor
+Linux/Gpio
+Linux/PmodOled
 
 [Configs]
 >Demo/

@@ -1,0 +1,6 @@
+[submodule "Src/External/vivado-library"]
+	path = Src/External/vivado-library
+	url = https://github.com/Digilent/vivado-library.git
+[submodule "Src/External/embeddedsw"]
+	path = Src/External/embeddedsw
+	url = https://github.com/Xilinx/embeddedsw.git

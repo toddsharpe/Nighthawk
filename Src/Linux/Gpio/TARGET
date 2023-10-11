@@ -1,0 +1,4 @@
+BinName=Gpio
+
+[CppSources]
+Main.cc

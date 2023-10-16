@@ -8,7 +8,7 @@ BinName=PmodOled
 >External/embeddedsw/lib/bsp/standalone/src/arm/common/gcc/
 
 [CSources]
-main.c
+Main.cpp
 >External/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0/drivers/PmodOLEDrgb_v1_0/src/PmodOLEDrgb.c
 >External/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0/drivers/PmodOLEDrgb_v1_0/src/xspi.c
 >External/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0/drivers/PmodOLEDrgb_v1_0/src/xspi_options.c

@@ -1,0 +1,4 @@
+BinName=lsuio
+
+[CSources]
+Main.cpp

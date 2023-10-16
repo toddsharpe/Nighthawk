@@ -3612,7 +3612,7 @@ Add Users to Sudo users (ADD_USERS_TO_SUDOERS) []
 [DEBUG] Adding layer: /home/tsharpe/GitHub/toddsharpe/Nighthawk/Boards/artyz7/platform/project-spec/meta-user
 [DEBUG] Running CMD: bitbake-layers -F add-layer /home/tsharpe/GitHub/toddsharpe/Nighthawk/Boards/artyz7/platform/project-spec/meta-user
 [DEBUG] NOTE: Starting bitbake server...
-NOTE: Started PRServer with DBfile: /home/tsharpe/GitHub/toddsharpe/Nighthawk/Boards/artyz7/platform/build/cache/prserv.sqlite3, Address: 127.0.0.1:33409, PID: 4034309
+NOTE: Started PRServer with DBfile: /home/tsharpe/GitHub/toddsharpe/Nighthawk/Boards/artyz7/platform/build/cache/prserv.sqlite3, Address: 127.0.0.1:39593, PID: 1532615
 
 [INFO] Generating machine conf file
 [INFO] Generating plnxtool conf file

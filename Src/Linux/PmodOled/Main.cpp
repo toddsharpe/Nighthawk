@@ -22,19 +22,24 @@
 /******************************************************************************/
 
 #include "bitmap.h"
-#include "PmodOLEDrgb.h"
-#include "sleep.h"
+extern "C"
+{
+	#include "PmodOLEDrgb.h"
+}
 #include "xil_cache.h"
 #include "xparameters.h"
 #include <stdio.h>
 #include <fcntl.h>
 #include <sys/mman.h>
+#include "Linux/Uio.h"
 
 void DemoInitialize();
 void DemoRun();
 void DemoCleanup();
 void EnableCaches();
 void DisableCaches();
+
+using namespace Nighthawk;
 
 PmodOLEDrgb oledrgb;
 
@@ -56,15 +61,16 @@ int main(void) {
 void DemoInitialize() {
    EnableCaches();
 
-	//Map in
-	int fd = open("/dev/mem", O_RDWR | O_SYNC);
-	if (fd == -1)
-		printf("problem!\n");
+	//Open device.
+	UioDevice oled = UioDevice::FindByName("PmodOLEDrgb");
+	oled.Open();
 
-	void* gpioBase = (void *)mmap(NULL, (1 << 12), PROT_READ | PROT_WRITE, MAP_SHARED, fd, XPAR_PMODOLEDRGB_0_AXI_LITE_GPIO_BASEADDR);
-	void* spiBase = (void *)mmap(NULL, (1 << 12), PROT_READ | PROT_WRITE, MAP_SHARED, fd, XPAR_PMODOLEDRGB_0_AXI_LITE_SPI_BASEADDR);
+	//Map in.
+	std::vector<void*> maps;
+	oled.Map(maps);
+	Assert(maps.size() == 2);
 
-   OLEDrgb_begin(&oledrgb, (uint32_t)gpioBase, (uint32_t)spiBase);
+   OLEDrgb_begin(&oledrgb, (uint32_t)(uintptr_t)maps[0], (uint32_t)(uintptr_t)maps[1]);
 }
 
 void DemoRun() {
@@ -119,4 +125,18 @@ void DisableCaches() {
    Xil_ICacheDisable();
 #endif
 #endif
+}
+
+void Bugcheck(const char *file, const char *line, const char *format, ...)
+{
+	printf("Init Bugcheck\r\n");
+	printf("%s\r\n%s\r\n", file, line);
+
+	va_list args;
+	va_start(args, format);
+	printf(format, args);
+	printf("\r\n");
+	va_end(args);
+
+	exit(-1);
 }

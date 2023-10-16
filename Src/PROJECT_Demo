@@ -3,6 +3,7 @@ Linux/Init
 Linux/Monitor
 Linux/Gpio
 Linux/PmodOled
+Linux/lsuio
 
 [Configs]
 >Demo/
